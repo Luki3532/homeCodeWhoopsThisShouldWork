@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleMenu-1.0.css" />
+    <link rel="stylesheet" href="styleIndex-1.1.css" />
+    <title>BTSU Website v1.1</title>
+  </head>
+
+  <body>
+    <!-- container -->
+    <div class="navigationBar CNTNR">
+      <!-- START HAMBURGER MENU -->
+      <!-- left side of navigation bar, this will be our menu button that opens our menu -->
+      <div class="burgerIcon CNTNR">
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+          <!-- Button to close the overlay navigation -->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+
+          <!-- Overlay content -->
+          <div class="overlay-content">
+            <a href="index.html" class="TXT">Home</a>
+            <a href="dynamicSession.html" class="TXT">Find Sessions</a>
+            <a href="map_2.html" class="TXT">RHS Map</a>
+            <a href="about_students.html" class="TXT">Student Creators</a>
+          </div>
+        </div>
+
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span onclick="openNav()">
+          <div id="menuIconPart"></div>
+          <div id="menuIconPart"></div>
+          <div id="menuIconPart"></div>
+        </span>
+
+        <script>
+          // Function to open the overlay navigation menu
+          function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+          }
+
+          // Function to close the overlay navigation menu
+          function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+          }
+        </script>
+      </div>
+      <!-- END HAMBURGER MENU -->
+
+      <!-- when the screen size is MOBILE, we want to remove the links and add the Hamburger Menu -->
+      <div class="deskTopLinks">
+        <a href="index.html" class="TXT">Home</a>
+        <a href="dynamicSession.html" class="TXT">Find Sessions</a>
+        <a href="map_2.html" class="TXT">RHS Map</a>
+        <a href="about_students.html" class="TXT">Student Creators</a>
+      </div>
+
+      <!-- our register button goes here, THE MOST IMPORTANT FEATURE -->
+      <!-- container for item Flex Justify-content right -->
+      <div class="right CNTNR">
+        <div class="link TXT">Welcome</div>
+      </div>
+    </div>
+    <!-- end of container -->
+
+    <!-- end of navigation bar here! -->
+    <div class="header">
+      <div class="date TXT">August 7th & 8th, 2023</div>
+      <div class="iSuck">
+        <!-- SBCSC LOGO -->
+        <center>
+          <img
+            id="SBLogo"
+            class="img"
+            title="South Bend Community - School Corporation Logo"
+            alt="South Bend Community - School Corporation Logo"
+            src="SBLogo.png"
+          /><a href="https://www.sb.school/"></a>
+        </center>
+      </div>
+      <div class="title TXT">BTSU Conference</div>
+    </div>
+
+    <div class="section CNTNR">
+      <h3>Summary:</h3>
+
+      <p>
+        We are excited to announce the return of Back To School University
+        (BTSU), a professional development event for the South Bend Community
+        School Corporation. Please save the dates of August 7th and 8th to join
+        us at Riley High School for two days of transformative learning
+        experiences.
+      </p>
+      <h3>Purpose and Vision:</h3>
+      <p>
+        BTSU brings together educators and staff from across the district to
+        collaborate, share best practices, and inspire continuous improvement in
+        education.
+      </p>
+
+      <h3>Event Details:</h3>
+      <ul>
+        <li>Dates: Aug 7th and 8th</li>
+        <li>
+          Venue: <a href="https://riley.sb.school/">Riley High School</a> |
+          <a href="map_2.html">Maps</a>
+        </li>
+        <li>
+          Time: Session schedule to be provided |
+          <a href="Sessions">Sessions</a>
+        </li>
+      </ul>
+
+      <h3>Sessions and Workshops:</h3>
+      <p>
+        BTSU offers engaging sessions and workshops on instructional strategies,
+        technology integration, social-emotional learning, and more. Enhance
+        your teaching practices and inspire innovation in the classroom.
+      </p>
+
+      <h3>Compensation:</h3>
+      <p>
+        Teachers: $25 per session | Paras & IA's: $15 per session. Attendance
+        will be recorded for accurate compensation.
+      </p>
+      <h3>Welcome All Attendees:</h3>
+      <p>
+        Join BTSU, whether you're a seasoned educator or new staff member. Every
+        voice contributes to our educational community. Attend even if you can
+        only join one session.
+      </p>
+      <h3>Networking and Collaboration:</h3>
+      <p>
+        BTSU provides a unique opportunity to connect and collaborate with
+        fellow educators and staff members. Share ideas, engage in discussions,
+        and build professional relationships.
+      </p>
+      <p>
+        In the coming weeks, you will receive more information about the session
+        schedule, registration, and updates. We encourage you to take advantage
+        of this enriching opportunity for your professional development.
+      </p>
+
+      <p>
+        We eagerly await your presence at BTSU. Let's embrace continuous
+        learning, collaboration, and innovation to shape the future of education
+        in our district.
+      </p>
+
+      <p>
+        Thank you for your commitment to our students' success. We look forward
+        to welcoming you to BTSU!
+      </p>
+
+      <p>South Bend Schools</p>
+    </div>
+    <!-- end of section NAME -->
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="social-icons">
+        <div id="socialMediaTxt">
+          Don't forget to follow us on social media for live updates!
+        </div>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fab fa-instagram"></i>
+          <img
+            href="https://www.instagram.com/"
+            class="instagram logo"
+            src="https://s.yimg.com/fz/api/res/1.2/7wmcqjtgVFiMeMxLOlW3sw--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/e9d6381f-6a16-39d9-b6f9-1467838c022c/t_500x300"
+          />
+        </a>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="fab fa-facebook"></i>
+          <img
+            href="https://wwwfacebook.com/"
+            class="instagram logo"
+            src="https://s.yimg.com/fz/api/res/1.2/SBnTtvtkyJXCCDtTnKcQUw--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/c165dc31-f7f7-35c4-8df4-cdd842798724/t_500x300"
+          />
+        </a>
+        <a href="https://twitter.com/SouthBendCSC" target="_blank"
+          ><i class="fab fa-twitter"></i>
+          <img
+            class="twitter logo"
+            src="https://s.yimg.com/fz/api/res/1.2/WcH8VDX4XMZLqOT_1QFeJQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/efb32ac1-ab75-3801-aee1-666cdf999dfa/t_500x300"
+          />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
