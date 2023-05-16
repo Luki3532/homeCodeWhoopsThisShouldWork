@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleMenu-1.0.css">
+    <link rel="stylesheet" href="styleIndex-1.1.css">
+    <title>BTSU Website v1.1 - map-2.0</title>
+</head>
+
+<body>
+
+    <!-- container -->
+    <div class="navigationBar CNTNR">
+        <!-- START HAMBURGER MENU -->
+        <!-- left side of navigation bar, this will be our menu button that opens out menu -->
+        <div class="burgerIcon CNTNR">
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <a href="index.html" class="TXT">Home</a>
+                    <a href="#" class="TXT">Find Sessions</a>
+                    <a href="#" class="TXT">RHS Map</a>
+                    <a href="about_students.html" class="TXT">Student
+                        Creators</a>
+                </div>
+
+            </div>
+
+            <!-- Use any element to open/show the overlay navigation menu -->
+            <span onclick="openNav()">
+                <div id="menuIconPart"></div>
+                <div id="menuIconPart"></div>
+                <div id="menuIconPart"></div>
+            </span>
+
+            <script>
+                function openNav() {
+                    document.getElementById("myNav").style.width = "100%";
+                }
+
+                function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                }
+            </script>
+        </div>
+        <!-- END HAMBURGER MENU -->
+
+        <!-- when the scren size is MOBILE then we want to remove the links and add the Hamburger Menu -->
+        <div id="deskTopLinks">
+            <a href="index.html" class="TXT">Home</a>
+            <a href="#" class="TXT">Find Sessions</a>
+            <a href="#" class="TXT">RHS Map</a>
+            <a href="about_students.html" class="TXT">Student Creators</a>
+        </div>
+        <!-- our register button goes here THE MOST IMPORTANT FEATURE -->
+        <!-- container for item Flex Justify-content right -->
+        <div class="right CNTNR">
+            <div class="register TXT ">Welcome</div>
+        </div>
+    </div>
+    <!-- end of container -->
+
+    <!-- end of navigation bar here! -->
+
+    <!-- header here. Here The title is the largest TXT Element here and the date goes right above the title as a little note -->
+    <div class="header CNTNR">
+        <!-- the date of the event -->
+        <div class="date TXT">DATE</div>
+
+        <!-- the name of the event -->
+        <div class="title map TXT">MAP</div>
+    </div>
+    <!-- header ends here -->
+
+    <!-- now sections of information MEAT&POTATOS: -->
+
+    <!-- NAME section starts -->
+    <div class="section CNTNR">
+        <!-- the title of the section -->
+        <div class="sectionTitle TXT">Riley Floor Map</div>
+
+        <!-- section details -->
+        <div class="sectionDetails TXT">SECTION_details</div>
+
+        <!-- Section content -->
+        <div class='photo-grid-container'>
+            <div class='photo-grid'>
+                <div class='photo-grid-item first-item'>
+                    <!-- <div class="section-part-title floor-level TXT">First Floor</div> -->
+                    <img class="floor-img" src='map_images/first_floor.png' id="1st" onclick = "bigSmallImg()"/>
+                    <!-- <button onclick="resetImg()">Reset</button> -->
+                </div>
+                <div class='photo-grid-item'>
+                    <!-- <div class="section-part-title floor-level TXT">Second Floor</div> -->
+                    <img class="floor-img" src='map_images/second_floor.png' />
+                </div>
+                <div class='photo-grid-item'>
+                    <img class="floor-img" src='map_images/third_floor.png' />
+                </div>
+                <div class='photo-grid-item last-item'>
+                    <img class="floor-img" src='map_images/fourth_floor.png' />
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end of section NAME -->
+    <script>
+
+        // enlarge 1st map picture
+
+        // Get the img object using its Id
+        var val = false;
+        console.log("val is false");
+
+
+        img = document.getElementById("1st");
+        // Function to increase image size
+        function enlargeImg() {
+            // Set image size to 1.5 times original
+            img.style.transform = "scale(1.5)";
+            el.style.scale = 1.5;
+            // Animation effect
+            img.style.transition = "transform 0.25s ease";
+
+            val = true;
+            console.log("Img enlarge setting value to TRUE");
+
+        }
+        // Function to reset image size
+        function resetImg() {
+            // Set image size to original
+            img.style.transform = "scale(1)";
+            el.style.scale = 1;
+
+            img.style.transition = "transform 0.25s ease";
+
+            val = false
+            console.log("Image Reset VAL IS NOW FALSE");
+
+        }
+        var el = document.getElementById("1st");
+
+        console.log("The element transform is:"+ el.style.transform);
+
+        function bigSmallImg(){
+            console.log("The element scale is:"+ el.style.scale)
+            if(el.style.scale === 1.5){
+                console.log("image reset")
+                resetImg(); 
+            } else {
+                enlargeImg();
+            }
+        }
+
+    </script>
+   
+
+</body>
+
+</html>

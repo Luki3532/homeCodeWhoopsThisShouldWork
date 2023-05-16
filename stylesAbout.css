@@ -1,0 +1,27 @@
+body{
+    background-color: #fdfdfd;
+}
+
+.photo-container{
+    width: 50%;
+    margin: auto;
+    display: block;
+
+}
+
+img { 
+    margin: auto;
+    display: block;
+    width: 50%;
+}
+.photo-container img{
+    border-radius: 50%;
+    opacity: .925
+}
+
+.idCNTNR{
+    margin-bottom: 10%;
+}
+.text{
+    padding: 0% 15%;
+}

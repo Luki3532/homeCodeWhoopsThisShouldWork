@@ -1,0 +1,51 @@
+body {
+    /* BACKGROUND_COLOR */
+    background-color: #f8cf3f;
+    /* SPACE BETWEEN THE OBJECT AND THE OTHER OBJECT (in this case the sides of our screen or web browser display) */
+    margin: 0%;
+
+}
+
+.navigationBar {
+    /* TEXT COLOR */
+    color: #fdfdfd;
+    /* BACKGROUND_COLOR */
+    background-color: #31364c;
+    /* PADDING START */
+    /* DISTANCE CONTENT IS FROM BOARDER */
+    /* top & bottom */
+    padding: 2.5%;
+
+    /* left */
+    padding-left: 5%;
+
+    /* right */
+    padding-right: 5%;
+    /* PADDING END */
+
+    /* FLEX BOX */
+    /* display */
+    display: flex;
+    /* where content should be placed * amount of space */
+    justify-content: space-between;
+    /* FLEX BOX END */
+    
+}
+.header,
+.section {
+    /* PADDING START */
+    /* DISTANCE CONTET IS FROM BOARDER */
+    /* top & bottom || all sides (!LEFT&!RIGHT)*/
+    padding: 2.5%;
+    /* left */
+    padding-left: 5%;
+    /* right */
+    padding-right: 5%;
+    /* PADDING END */
+}
+#menuIconPart{
+    width: 17.5px;
+    height: 2.5px;
+    background-color: #fdfdfd;
+    margin: 2.5px 0;
+}
