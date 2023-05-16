@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="styleMenu-1.0.css" />
+<link rel="stylesheet" href="styleIndex-1.1.css" />
+
+<!-- container -->
+<div class="navigationBar CNTNR">
+    <!-- START HAMBURGER MENU -->
+    <!-- left side of navigation bar, this will be our menu button that opens out menu -->
+    <div class="burgerIcon CNTNR">
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="index.html" class="TXT">Home</a>
+                <a href="dynamicSession.html" class="TXT">Find Sessions</a>
+                <a href="map_2.html" class="TXT">RHS Map</a>
+                <a href="about_students.html" class="TXT">Student Creators</a>
+            </div>
+        </div>
+
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span onclick="openNav()">
+            <div id="menuIconPart"></div>
+            <div id="menuIconPart"></div>
+            <div id="menuIconPart"></div>
+        </span>
+
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+    </div>
+    <!-- END HAMBURGER MENU -->
+
+    <!-- when the scren size is MOBILE then we want to remove the links and add the Hamburger Menu -->
+    <div class="deskTopLinks">
+        <a href="index.html" class="TXT">Home</a>
+        <a href="dynamicSession.html" class="TXT">Find Sessions</a>
+        <a href="map_2.html" class="TXT">RHS Map</a>
+        <a href="about_students.html" class="TXT">Student Creators</a>
+    </div>
+    <!-- our register button goes here THE MOST IMPORTANT FEATURE -->
+    <!-- container for item Flex Justify-content right -->
+    <div class="right CNTNR">
+        <div class="register TXT">Welcome</div>
+    </div>
+</div>
+<!-- end of container -->
